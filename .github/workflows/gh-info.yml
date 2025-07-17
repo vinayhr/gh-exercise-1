@@ -1,0 +1,8 @@
+name: Issues-Information
+on: push
+jobs:
+  Information:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Info
+      run: echo "${{ github }}"

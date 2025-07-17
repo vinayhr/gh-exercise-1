@@ -1,8 +1,8 @@
 name: Issues-Information
-on: push
+on: issues
 jobs:
   Information:
     runs-on: ubuntu-latest
     steps:
     - name: Info
-      run: echo "${{ github }}"
+      run: echo "${{ toJSON(github) }}"
